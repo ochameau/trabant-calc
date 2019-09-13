@@ -108,7 +108,8 @@ async function loadResults(branch, revisionList) {
     results.appendChild(dotElt);
 
     const kmElt = document.createElement("div");
-    kmElt.className = "km";
+    const speed = ratio <= 0.25 ? "slow" : ( ratio <= 0.75 ? "normal" : "fast");
+    kmElt.className = "km " + speed;
     const hours = Math.floor(totalDuration / 3600);
     const kmPerHours = 0.4387058823529412;
     const km = Math.round(hours * kmPerHours);

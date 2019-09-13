@@ -27,7 +27,7 @@ input {
   align-items: center;
 }
 #results.loading {
-  background-image: url("trabant_dribbble.gif");
+  background-image: url("trabant-normal.gif");
   width: 400px;
   height: 300px;
   margin: auto;
@@ -41,8 +41,16 @@ input {
   display: inline-block;
   justify-self: center;
 }
+.km.slow {
+  background-image: url("trabant-slow.gif");
+}
+.km.normal {
+  background-image: url("trabant-normal.gif");
+}
+.km.fast {
+  background-image: url("trabant-fast.gif");
+}
 .km {
-  background-image: url("trabant_dribbble.gif");
   background-size: 100px 70px;
   width: 95px;
   height: 45px;
