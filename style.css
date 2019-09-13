@@ -1,0 +1,54 @@
+h2 {
+  vertical-align: middle;
+}
+h2 a {
+  font-weight: normal;
+}
+h2 a:visited {
+  color: blue;
+}
+h2 a.selected {
+  font-weight: bold;
+}
+label {
+  margin-right: 0.5em;
+}
+h2 label, input, select {
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 2em;
+}
+input {
+  padding: 0.3em;
+}
+#results {
+  display: grid;
+  grid-template-columns: 50px 100px 200px auto;
+  align-items: center;
+}
+#results.loading {
+  background-image: url("trabant_dribbble.gif");
+  width: 400px;
+  height: 300px;
+  margin: auto;
+}
+#results div {
+  margin: 10px 5px;
+}
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  justify-self: center;
+}
+.km {
+  background-image: url("trabant_dribbble.gif");
+  background-size: 100px 70px;
+  width: 95px;
+  height: 45px;
+  line-height: 15px;
+  text-align: center;
+  background-position: -4px -18px;
+  font-weight: bold;
+  color: #179700;
+}
